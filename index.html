@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>EpicFitness Tallaght</title>
+<link href="css/style1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<img id = "img" src="images/logo.jpg" alt="Nature" class ="responsive">
+	<div class="topnav" id="myTopnav">
+	  <a href="index.html" class="active">Home</a>
+	  <a href="about.html">About Us</a>
+	  <a href="information.html">Information</a>
+	  <a href="body-tec.html">Body-Tec</a>
+	  <a href="fitness.html">Fitness Classes</a>
+	  <a href="training.html">Personal Training</a>
+	  <div class="dropdown">
+		<button class="dropbtn">Gallery 
+		<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="pictures.html">Pictures</a>
+		  <a href="videos.html">Videos</a>
+		</div>
+	  </div> 
+	  <a href="form.html">Contact Us</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+<div> <img id="grouppic" src="images/group.jpg" alt=""/>
+  <section class= "responsive">
+    <div class ="test"> </div>
+    <div class = "context">
+      <h2>What do we do?</h2>
+      <strong>EpicFitness Tallaght has been around for about 13 years. We strive to maintain an excellent reputation. We specialise in Body-Tec, Fitness Classes and Personal Training. Our trainers are passionate about their careers and passionate to help others get into shape. If you go to our About Us section, you will find more about the company there. Timetables, price plans & our cancellation policies can be found in our information section.</strong></div>
+  </section>
+</div>
+
+<script>
+function myFunction() 
+{
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") 
+	{
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<footer><strong>&copy;Copyright 2018.</strong> <a href="https://www.facebook.com/epicfitness.ireland/" target="_blank"><img id = "fb" src="images/facebook.png" alt=""/></a><a href="https://www.instagram.com/epicfitnesstallaghtmihabodytec/" target="_blank"><img id = "insta" src="images/insta.png" alt=""/></a></footer>
+</body>
+</html>

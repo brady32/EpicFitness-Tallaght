@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>EpicFitness Tallaght</title>
+<link href="css/style1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<img id = "img" src="images/logo.jpg" alt="Nature" class ="responsive">
+	<div class="topnav" id="myTopnav">
+	  <a href="index.html">Home</a>
+	  <a href="about.html">About Us</a>
+	  <a href="information.html">Information</a>
+	  <a href="body-tec.html">Body-Tec</a>
+	  <a href="fitness.html">Fitness Classes</a>
+	  <a href="training.html">Personal Training</a>
+	  <div class="dropdown">
+		<button class="dropbtn">Gallery 
+		<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="pictures.html"  class="active2">Pictures</a>
+		  <a href="videos.html">Videos</a>
+		</div>
+	  </div> 
+	  <a href="form.html">Contact Us</a>
+	</div>
+
+<div class="slideshow-container">
+	<h2 class="white">Pictures</h2>
+
+	<div class="mySlides fade">
+	  <img class="slides" src="images/building.JPG" alt="">
+	  <div class="text">Our Building</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="slides" src="images/inside.JPG" alt="">
+	  <div class="text">Training Area</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img id="suit2" src="images/btsuit2.JPG" alt="">
+	  <div class="text">Body-Tec Suit</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img class="slides" src="images/btequip.JPG" alt="">
+	  <div class="text">Body-Tec Equipment</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img class="slides" src="images/btmachine.JPG" alt="">
+	  <div class="text">Body-Tec Machine</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img class="slides" src="images/screen.JPG" alt="">
+	  <div class="text">Polar System On Screen</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="slides" src="images/women.JPG" alt="">
+	  <div class="text">Fitness Class</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img class="slides" src="images/hi.JPG" alt="">
+	  <div class="text">Fitness Class</div>
+	</div>
+</div>
+<br>
+
+<div id="dotstyle">
+ 	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+</div>
+
+<!-- Java Script for Gallery-->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() 
+{
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	for (i = 0; i < slides.length; i++) 
+	{
+		   slides[i].style.display = "none";  
+    }
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}    
+		for (i = 0; i < dots.length; i++) 
+	{
+        dots[i].className = dots[i].className.replace(" active3", "");
+    }
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active3";
+		setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+<!-- Java Script for Navbar-->
+<script> 
+function myFunction() 
+{
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") 
+	{
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<footer><strong>&copy;Copyright 2018.</strong><a href="https://www.facebook.com/epicfitness.ireland/" target="_blank"><img id = "fb" src="images/facebook.png" alt=""/></a><a href="https://www.instagram.com/epicfitnesstallaghtmihabodytec/" target="_blank"><img id = "insta" src="images/insta.png" alt=""/></a></footer>
+</body>
+</html>
