@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>EpicFitness Tallaght</title>
+<link href="css/style1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<img id = "img" src="images/logo.jpg" alt="Nature" class ="responsive">
+	<div class="topnav" id="myTopnav">
+	  <a href="index.html">Home</a>
+	  <a href="about.html">About Us</a>
+	  <a href="information.html">Information</a>
+	  <a href="body-tec.html">Body-Tec</a>
+	  <a href="fitness.html">Fitness Classes</a>
+	  <a href="training.html">Personal Training</a>
+	  <div class="dropdown">
+		<button class="dropbtn">Gallery 
+		<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="pictures.html">Pictures</a>
+		  <a href="videos.html"  class="active2">Videos</a>
+		</div>
+	  </div> 
+	  <a href="form.html">Contact Us</a>
+	</div>
+<div class="wrapper">
+<h2 class="white">Videos</h2>
+	<div class="columns">
+		<div class="vid1">
+			<video width="400" height="400" controls muted autoplay>
+    			<source src="mp4s/bodytec.mp4" type="video/mp4">
+			</video>
+		</div>
+		
+		<div class="vid2">
+			<video width="500" height="300" controls muted autoplay>
+    			<source src="mp4s/fitnessvid.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+</div>
+	
+<!-- Java Script for Navbar-->
+<script> 
+function myFunction() 
+{
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") 
+	{
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<footer><strong>&copy;Copyright 2018.</strong><a href="https://www.facebook.com/epicfitness.ireland/" target="_blank"><img id = "fb" src="images/facebook.png" alt=""/></a><a href="https://www.instagram.com/epicfitnesstallaghtmihabodytec/" target="_blank"><img id = "insta" src="images/insta.png" alt=""/></a></footer>
+</body>
+</html>
