@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>EpicFitness Tallaght</title>
+<link href="css/style1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+<img id = "img" src="images/logo.jpg" alt="Nature" class ="responsive">
+	<div class="topnav" id="myTopnav">
+	  <a href="index1.html">Home</a>
+	  <a href="about.html">About Us</a>
+	  <a href="information.html">Information</a>
+	  <a href="body-tec.html">Body-Tec</a>
+	  <a href="fitness.html">Fitness Classes</a>
+	  <a href="training.html" class="active">Personal Training</a>
+	  <div class="dropdown">
+		<button class="dropbtn">Gallery 
+		<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="pictures.html">Pictures</a>
+		  <a href="videos.html">Videos</a>
+		</div>
+	  </div> 
+	  <a href="form.html">Contact Us</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+<div class="wrapper">
+	<div class="columns">
+	  <div class="column5">
+			<h2 class="white">Personal Training</h2>
+				<p>Our Personal Training classes consist of 2 to 4 people in a session and last about 50 minutes. This class is more hands on and our trainers can focus on the clients weakness's to help them gain more. Most people choose personal training as they are training for a sports event, specific goals or get more knowledge about fitness. Some people do not big groups to train so they chose the personal training option as they receive more attention from the trainer and the trainer can focus more of their time on the clients.</p>
+				<img id="training" src="images/training.JPG" alt="Nature" class ="responsive"/>
+
+		</div>
+	</div>
+</div>
+
+<script>
+function myFunction() 
+{
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") 
+	{
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<footer><strong>&copy;Copyright 2018.</strong><a href="https://www.facebook.com/epicfitness.ireland/" target="_blank"><img id = "fb" src="images/facebook.png" alt=""/></a><a href="https://www.instagram.com/epicfitnesstallaghtmihabodytec/" target="_blank"><img id = "insta" src="images/insta.png" alt=""/></a></footer>
+</body>
+</html>
